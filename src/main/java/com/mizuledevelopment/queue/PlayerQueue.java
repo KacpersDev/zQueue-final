@@ -1,13 +1,9 @@
 package com.mizuledevelopment.queue;
 
-import lombok.Getter;
-import lombok.Setter;
 
 import java.util.List;
 import java.util.UUID;
 
-@Getter
-@Setter
 public class PlayerQueue {
 
     private UUID uuid;
@@ -18,5 +14,21 @@ public class PlayerQueue {
         this.uuid = uuid;
         this.playerQueues = playerQueues;
         this.isOffline = isOffline;
+    }
+
+    public UUID getUuid() {
+        return uuid;
+    }
+
+    public List<ServerQueue> getPlayerQueues() {
+        return playerQueues;
+    }
+
+    public boolean isOffline() {
+        return isOffline;
+    }
+
+    public void setPlayerQueues(List<ServerQueue> playerQueues) {
+        this.playerQueues = playerQueues;
     }
 }

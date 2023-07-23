@@ -1,14 +1,12 @@
 package com.mizuledevelopment.utils;
 
 import com.mizuledevelopment.Queue;
-import lombok.Getter;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.FileConfiguration;
 
 import java.io.File;
 import java.io.IOException;
 
-@Getter
 public class Config {
 
     private final Queue plugin;
@@ -34,5 +32,9 @@ public class Config {
         } catch (IOException | InvalidConfigurationException e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public FileConfiguration getConfiguration() {
+        return configuration;
     }
 }

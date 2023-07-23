@@ -3,12 +3,10 @@ package com.mizuledevelopment.task.runnable;
 import com.mizuledevelopment.Queue;
 import com.mizuledevelopment.bungeecord.QueueBungeeAdapter;
 import com.mizuledevelopment.task.QueueTask;
-import lombok.Getter;
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitTask;
 
-@Getter
 public class QueueRunnable {
 
     private final Queue plugin;

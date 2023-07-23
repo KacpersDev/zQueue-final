@@ -1,13 +1,8 @@
 package com.mizuledevelopment.queue;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import java.util.LinkedList;
 import java.util.UUID;
 
-@Getter
-@Setter
 public class ServerQueue {
 
     private LinkedList<UUID> players;
@@ -22,5 +17,33 @@ public class ServerQueue {
         this.delay = delay;
         this.isFrozen = isFrozen;
         this.server = server;
+    }
+
+    public void setPlayers(LinkedList<UUID> players) {
+        this.players = players;
+    }
+
+    public LinkedList<UUID> getPlayers() {
+        return players;
+    }
+
+    public void setFrozen(boolean frozen) {
+        isFrozen = frozen;
+    }
+
+    public String getQueueName() {
+        return queueName;
+    }
+
+    public boolean isFrozen() {
+        return isFrozen;
+    }
+
+    public String getServer() {
+        return server;
+    }
+
+    public int getDelay() {
+        return delay;
     }
 }
