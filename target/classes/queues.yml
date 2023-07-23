@@ -1,0 +1,6 @@
+queues:
+  test:
+    name: "test"
+    delay: 5
+    force-frozen: false
+    server: "test"

@@ -1,4 +1,7 @@
-name: zQueue-Prouduct
+name: zQueue
 version: '${project.version}'
 main: com.mizuledevelopment.Queue
 api-version: 1.17
+commands:
+  queue:
+  zqueue:
