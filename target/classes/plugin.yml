@@ -1,7 +1,0 @@
-name: zQueue
-version: '1.0-SNAPSHOT'
-main: com.mizuledevelopment.Queue
-api-version: 1.17
-commands:
-  queue:
-  zqueue:

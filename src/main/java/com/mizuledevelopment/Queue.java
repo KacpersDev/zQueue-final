@@ -34,8 +34,6 @@ public final class Queue extends JavaPlugin {
     @Override
     public void onEnable() {
         this.configuration();
-        LicenseAdapter licenseAdapter = new LicenseAdapter();
-        licenseAdapter.validation(this, this.getLicenseConfig().getConfiguration().getString("license"));
         this.command();
         this.listener(Bukkit.getPluginManager());
 
